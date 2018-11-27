@@ -1,0 +1,205 @@
+/*Variables*/
+
+$grid14-height: 12.5vh;
+$grid235-height: 25vh;
+$gridsBorders: solid 1px #fff;
+$cardsBorderRad: 5px;
+$cardsColor: #65A5D1;
+$cardsHoverColor: #FFC273;
+$nextHover:#61D89F;
+$digitsColor:#61D89F;
+body,
+    {
+    margin: 0 !important;
+    background-color: rgb(128, 128, 128);
+}
+
+p {
+    margin: 0 !important;
+}
+
+.container {
+    height: 100%;
+}
+
+.next {
+    position: absolute;
+    padding: 0 5px 0 5px;
+    color: rgb(255, 255, 255);
+    top: 50vh;
+    right: 10px;
+    height: 30px;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    background-color: $cardsColor;
+    filter: drop-shadow(2px 2px 2px #363636);
+    &:hover {
+        background-color: $nextHover;
+        filter: drop-shadow(2px 10px 4px #363636);
+    }
+}
+
+.grid002,
+.grid003,
+.grid005 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: $grid235-height;
+    border: $gridsBorders;
+    background: rgb(153, 153, 153);
+}
+
+.grid001,
+.grid004 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: $grid14-height;
+    border: $gridsBorders;
+    background: rgb(172, 172, 172);
+    ;
+}
+
+.scoreTop {
+    position: relative;
+    border: $gridsBorders;
+    width: 150px;
+    height: 100%;
+    font-size: 2em;
+    margin: 0 auto;
+}
+
+.digits {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px;
+    border: $gridsBorders;
+    border-radius: $cardsBorderRad;
+    background: $digitsColor;
+}
+
+.card001 {
+    position: relative;
+    margin: 2.5vh 0 0 calc(50vw - 160px);
+    position: relative;
+    background-color: $cardsColor;
+    float: left;
+    border: $gridsBorders;
+    border-radius: $cardsBorderRad;
+    width: 150px;
+    height: 80%;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px #363636);
+    &:hover {
+        background-color: $cardsHoverColor;
+        filter: drop-shadow(2px 10px 4px #363636);
+    }
+}
+
+.card002 {
+    position: relative;
+    float: left;
+    margin: 2.5vh 0 0 20px;
+    position: relative;
+    background-color: $cardsColor;
+    border: $gridsBorders;
+    border-radius: $cardsBorderRad;
+    width: 150px;
+    height: 80%;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px #363636);
+    &:hover {
+        background-color: $cardsHoverColor;
+        filter: drop-shadow(2px 10px 4px #363636);
+    }
+}
+
+.card003 {
+    position: relative;
+    background-color: $cardsColor;
+    margin: 2.5vh auto;
+    border: $gridsBorders;
+    border-radius: $cardsBorderRad;
+    width: 150px;
+    height: 80%;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px #363636);
+    &:hover {
+        background-color: $cardsHoverColor;
+        filter: drop-shadow(2px 10px 4px #363636);
+    }
+}
+
+.scoreBottom {
+    position: relative;
+    border: $gridsBorders;
+    width: 150px;
+    height: 100%;
+    font-size: 2em;
+    margin: 0 auto;
+}
+
+.digiLeft,
+.digiRight,
+.digiLefTop {
+    line-height: 45px;
+    margin: 0 !important;
+    position: absolute;
+    width: 40px;
+    height: 45px;
+    font-size: 1.2em;
+    text-align: center;
+    border: solid 1px #fff;
+    border-radius: 5px;
+}
+
+.digiLefTop {
+    top: 10px;
+    left: 10px;
+}
+
+.discript {
+    top: 65px;
+    left: 10px;
+    margin: 0 !important;
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    font-size: 1em;
+    text-align: center;
+    border: solid 1px #fff;
+    line-height: 0.9em;
+    border-radius: 5px;
+    & p {
+        padding: 3px 5px 3px 5px;
+    }
+}
+
+.digiLeft {
+    bottom: 10px;
+    left: 10px;
+}
+
+.digiRight {
+    bottom: 10px;
+    right: 10px;
+}
+
+.cardX {
+    float: left;
+    position: relative;
+    background-color: $cardsColor;
+    margin: 2.4vh 5px 0 5px;
+    border: $gridsBorders;
+    border-radius: $cardsBorderRad;
+    width: 150px;
+    height: 80%;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px #363636);
+    &:hover {
+        background-color: $cardsHoverColor;
+        filter: drop-shadow(2px 10px 4px #363636);
+    }
+}
